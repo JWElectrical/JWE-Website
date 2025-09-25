@@ -1,0 +1,167 @@
+.contact-main-section {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header-container {
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1F1F1F;
+}
+
+.contact-header-container h1 {
+    margin: auto 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+#contact-icon {
+    height: 50px;
+}
+
+.contact-intro-text-container {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    max-width: 400px;
+    margin: 20px auto;
+   
+    padding: 10px;
+}
+
+.contact-option {
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #1F1F1F;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 200px;
+}
+
+.contact-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-call,
+.mobile-text,
+.mobile-email {
+    display: block;
+}
+
+.desktop-calltext,
+.desktop-email {
+    display: none;
+}
+
+@media (min-width: 600px) and (orientation: portrait) {
+    .contact-info-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 750px;
+        margin: 20px auto;
+    }
+
+    .mobile-call,
+    .mobile-text,
+    .mobile-email {
+        display: none;
+    }
+
+    .desktop-calltext,
+    .desktop-email {
+        display: flex;
+        cursor: default;
+        pointer-events: none;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 2rem 2.5rem;
+        font-size: 1.2rem;
+        min-height: 150px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .contact-intro-text-container p {
+        max-width: 60%;
+    }
+
+    #number {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .contact-info-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 750px;
+        margin: 40px auto;
+    }
+
+    .mobile-call,
+    .mobile-text,
+    .mobile-email {
+        display: none;
+    }
+
+    .desktop-calltext,
+    .desktop-email {
+        display: flex;
+        cursor: default; 
+        pointer-events: none;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 2rem 2.5rem;
+        font-size: 1.2rem;
+        min-height: 150px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .contact-intro-text-container p {
+        max-width: 60%;
+    }
+
+    #number {
+        display: block;
+    }
+}
+
+
+
+
+

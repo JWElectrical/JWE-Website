@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Jesse Wright Electrical</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="Assets/Favicons/site.webmanifest">
+
+        <link rel="stylesheet" href="indexStyles.css">
+        <link rel="stylesheet" href="reviewsStyles.css">
+        <script src="reviews.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <div class="left-header-container">
+                    <a href="index.html">
+                        <img src="Assets/Images/Logo.PNG" alt="Jesse Wright Electrical Logo" id="logo">
+                    </a>
+                </div>
+
+                <div class="right-header-container">
+                    <img src="Assets/Icons/menu-icon.svg" alt="Menu Icon" id="menu-icon">
+
+                    <nav class="nav-bar">
+                        <div class="nav-center">
+                            <ul class="nav-links">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="services.html">SERVICES</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="reviews.html">REVIEWS</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <button id="quote-btn">REQUEST QUOTE</button>
+                    </nav>
+                </div>
+            </header>
+
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <section class="reviews-main-section">
+                <div class="reviews-header-container">
+                    <h1>Reviews</h1>
+                    <img src="Assets/Icons/reviews-icon.svg" alt="Reviews Icon" id="reviews-icon">
+                </div>
+
+                <div class="reviews-intro-text-container">
+                    <p>
+                        Real reviews from real customers. Discover why people continue to choose us for quality and reliability.
+                    </p>
+                </div>
+
+                <div id="reviews-container"></div>
+
+                <button class="body-btns" onclick="window.open('https://www.homeadvisor.com/rated.JesseWrightElectrical.34552904.html#reviews', '_blank')">View Complete List on Home Advisor</button>
+
+            </section>
+
+            <footer>
+                <p class="footer-text">© 2025 Jesse Wright Electrical. All Rights Reserved.</p>
+                <p class="license">Maine: #60020569 - New Hampshire: #13089</p>
+            </footer>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Jesse Wright Electrical</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="Assets/Favicons/site.webmanifest">
+
+        <link rel="stylesheet" href="indexStyles.css">
+        <link rel="stylesheet" href="galleryStyles.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
+        <script src="gallery.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <div class="left-header-container">
+                    <a href="index.html">
+                        <img src="Assets/Images/Logo.PNG" alt="Jesse Wright Electrical Logo" id="logo">
+                    </a>
+                </div>
+
+                <div class="right-header-container">
+                    <img src="Assets/Icons/menu-icon.svg" alt="Menu Icon" id="menu-icon">
+
+                    <nav class="nav-bar">
+                        <div class="nav-center">
+                            <ul class="nav-links">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="services.html">SERVICES</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="reviews.html">REVIEWS</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                        <button id="quote-btn">REQUEST QUOTE</button>
+                    </nav>
+                </div>
+            </header>
+
+            <nav class="mobile-nav" id="mobile-nav">
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+
+
+            <section class="gallery-main-section">
+                <div class="gallery-header-container">
+                    <h1>Gallery</h1>
+                    <img src="Assets/Icons/gallery-icon.svg" alt="Gallery Icon" id="gallery-icon">
+                </div>
+
+                <div class="gallery-intro-text-container">
+                    <p>At Jesse Wright Electrical, every project tells a story. From small residential 
+                        fixes to large-scale commercial installations, my work is guided by precision, 
+                        safety, and attention to detail. This gallery showcases the results of my hands-on 
+                        experience and commitment to quality — from neatly wired panels and cleanly installed 
+                        fixtures to complex electrical solutions executed with care. Each image represents not 
+                        just a finished project, but the trust my clients place in me and my dedication to 
+                        delivering safe, reliable, and professional electrical services every time.
+                    </p>
+                </div>
+
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Assets/Images/img-6.jpeg" alt="Image 1"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-20.png" alt="Image 2"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-2.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-9.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-4.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-3.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-5.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-7.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-8.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-10.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-11.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-12.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-13.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-14.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-15.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-16.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-1.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-18.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-19.jpeg" alt="Image 3"></div>
+                        <div class="swiper-slide"><img src="Assets/Images/img-17.jpeg" alt="Image 3"></div>
+                    </div>
+
+                    <!-- Swiper navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="modal">
+                    <span class="modal-close" id="modal-close">&times;</span>
+                    <span class="modal-prev" id="modal-prev">&#10094;</span>
+                    <img class="modal-img" id="modal-img" src="" alt="Enlarged Image">
+                    <span class="modal-next" id="modal-next">&#10095;</span>
+                </div>
+            </section>
+
+            <footer>
+                <p class="footer-text">© 2025 Jesse Wright Electrical. All Rights Reserved.</p>
+                <p class="license">Maine: #60020569 - New Hampshire: #13089</p>
+            </footer>
+        </main>
+    </body>
+</html>
